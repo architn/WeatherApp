@@ -3,11 +3,26 @@
     margin-left: 50px;
     width:150px
 }
-
+#title{
+    margin-top: 20px;
+    margin-left: 0px;
+}
 #search-bar{
-    width: 290px;
+    margin-top: 20px;
+    width: 390px;
     height: 40px;
-    margin-left: 200px;
+    margin-left: 150px;
+}
+
+#location{
+    font-size: 3em;
+}
+
+#condition{
+    font-size: 2em;
+}
+#temperature{
+    font-size: 2em;
 }
 
 nav{
@@ -15,11 +30,18 @@ nav{
 }
 
 .nav-link{
+    margin-top: 20px;
     color: white;
     font-size: 120%;
 }
 
-#search-btn{
-    width: 15px;
+#search{
+    padding-top: 0.1px;
+    height: 25px;
+    text-align: center;
 }
 
+#selection{
+    margin-left: 50px;
+    width: 100px;
+}

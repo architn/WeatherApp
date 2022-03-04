@@ -11,7 +11,7 @@
 
         <nav class="nav">
             <img src="/images/logos.png" class="logo"/>
-            <span class="nav-link">Weather Report</span>
+            <span class="nav-link" id="title">Weather Forecast</span>
             <input id="search-bar" type="text" placeholder="Enter city or zip code...">
             <a class="nav-link active" href="#"><button id="search" class="btn btn-light" onclick="onSearch()">Search</button></a>
             <a class="nav-link" href="#">
@@ -26,13 +26,36 @@
 
           <div class="container">
             <div id="weather-section" class="jumbotron" style="display: none;">
-                <h1 class="display-4" id="location"></h1>
-                <p class="display-2" id="temperature"></p>
-                <p class="display-4" id="description"></p>
+                <img id="img_weather" src="">
+                <h1 class="display-2" id="location"></h1>
+                <p class="display-4" id="condition"></p>
+                <p class="display-4" id="temperature"></p> 
                 <hr class="my-4">
-                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-              </div>
+                <table class="table table-striped">
+                    <tr>
+                        <td id="wind-speed"></td>
+                        <td id="humidity"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="pressure"></td>
+                        <td id="feels-like"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="visibility"></td>
+                        <td id="precipitation"></td>
+                    </tr>
+
+                    <tr>
+                        <td id="cloud"></td>
+                        <td id="uv"></td>
+                    </tr>
+
+
+                </table>
+            </div>
+              
           </div>
 
 
