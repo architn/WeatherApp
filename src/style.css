@@ -1,0 +1,25 @@
+
+.logo{
+    margin-left: 50px;
+    width:150px
+}
+
+#search-bar{
+    width: 290px;
+    height: 40px;
+    margin-left: 200px;
+}
+
+nav{
+    background-color: rgb(48, 51, 56);
+}
+
+.nav-link{
+    color: white;
+    font-size: 120%;
+}
+
+#search-btn{
+    width: 15px;
+}
+

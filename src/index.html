@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Weather Application</title>
+</head>
+<body>
+
+        <nav class="nav">
+            <img src="/images/logos.png" class="logo"/>
+            <span class="nav-link">Weather Report</span>
+            <input id="search-bar" type="text" placeholder="Enter city or zip code...">
+            <a class="nav-link active" href="#"><button id="search" class="btn btn-light" onclick="onSearch()">Search</button></a>
+            <a class="nav-link" href="#">
+                <select id="selection">
+                    <option value="c">&deg; C</option>
+                    <option value="f">&deg; F</option>
+                </select>
+            </a>
+          </nav>
+
+          <br><br>
+
+          <div class="container">
+            <div id="weather-section" class="jumbotron" style="display: none;">
+                <h1 class="display-4" id="location"></h1>
+                <p class="display-2" id="temperature"></p>
+                <p class="display-4" id="description"></p>
+                <hr class="my-4">
+                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+              </div>
+          </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
